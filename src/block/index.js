@@ -9,10 +9,7 @@ import s from './styles.css';
 class BlockPage extends React.Component {
 
   componentDidMount() {
-    history.listen(lsn => {
-      console.log(lsn);
-      this.updateBlockchain('toto');
-    });
+    this.updateBlockchain(this.props.route.params.id);
   }
 
   updateBlockchain(id) {

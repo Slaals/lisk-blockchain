@@ -10,8 +10,13 @@ class SearchBox extends React.Component {
   }
 
   handleSearch(e) {
+    let id = e.currentTarget.value;
+    let pathname = '/';
+    if (id && id !== '') {
+      pathname = `/transactions/${id}`;
+    }
     history.push({
-      pathname: `/transactions/${e.currentTarget.value}`
+      pathname: pathname
     });
   }
 
