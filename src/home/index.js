@@ -11,7 +11,7 @@
 import React, { PropTypes } from 'react';
 import Layout from '../../components/Layout';
 import SearchBox from '../../components/SearchBox';
-import history from '../history';
+
 import conf from '../../tools/config';
 import s from './styles.css';
 

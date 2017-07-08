@@ -31,6 +31,10 @@ const config = {
   // The base directory for resolving the entry option
   context: path.resolve(__dirname, '../src'),
 
+  node: {
+    fs: 'empty'
+  },
+
   // The entry point for the bundle
   entry: [
     /* Material Design Lite (https://getmdl.io) */

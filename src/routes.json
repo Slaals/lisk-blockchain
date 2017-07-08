@@ -5,7 +5,7 @@
     "chunk": "main"
   },
   {
-    "path": "/transactions/:id",
+    "path": "/blocks/:id",
     "page": "./block",
     "chunk": "main"
   },
